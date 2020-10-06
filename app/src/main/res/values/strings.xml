@@ -2,6 +2,6 @@
     <string name="app_name">Curious</string>
     <string name="paste_link">Paste the comment link here</string>
     <string name="button">View Comment</string>
-    <string name="instructions1">Share the comment in reddit app</string>
-    <string name="instructions2">using \'Curious\'</string>
+    <string name="instructions1">Share the comment in reddit</string>
+    <string name="instructions2">app using \'Curious\'</string>
 </resources>
