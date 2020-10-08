@@ -20,19 +20,19 @@ public class CheckURL {
             if (host != null && host.contains("reddit.com")) {
                 List<String> pathSegments = validUrl.getPathSegments();
 
-                // URL structure: reddit.com/r/{subreddit}/comments/{submission id}/{submission title}/{comment id}/
+                // URL structure: reddit.com/r/{subreddit}/comments/{submission id}/{submission title}/{alert_comment id}/
                 if (pathSegments.size() == 5) { // submission
                     id = pathSegments.get(3);
                     Log.i(TAG, "Submission ID: " + id);
                     setResultCode(ResultCode.SUBMISSION);
                 }
-                else if (pathSegments.size() == 6) { // comment
+                else if (pathSegments.size() == 6) { // alert_comment
                     id = pathSegments.get(5);
                     Log.i(TAG, "Comment ID: " + id);
                     setResultCode(ResultCode.VALID_COMMENT);
                 }
                 else if (pathSegments.get(0).equals("comments")) {
-                    if (pathSegments.size() == 4) { // reddit.com/comments/{submission id}/{submission title}/{comment id}/
+                    if (pathSegments.size() == 4) { // reddit.com/comments/{submission id}/{submission title}/{alert_comment id}/
                         id = pathSegments.get(3);
                         Log.i(TAG, "Comment ID: " + id);
                         setResultCode(ResultCode.VALID_COMMENT);
@@ -44,7 +44,7 @@ public class CheckURL {
                     }
                 }
                 else {
-                    Log.e(TAG, "Not a valid comment link.");
+                    Log.e(TAG, "Not a valid alert_comment link.");
                     setResultCode(ResultCode.INVALID_COMMENT);
                 }
             }

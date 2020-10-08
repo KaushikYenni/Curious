@@ -6,6 +6,7 @@ public enum ResultCode {
     INVALID_COMMENT,
     NOT_REDDIT_LINK,
     NOT_URL,
+    MORE_DETAILS,
     FAILED,
     NO_INTERNET,
     NO_DATA_FOUND,
