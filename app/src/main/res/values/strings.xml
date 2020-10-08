@@ -4,4 +4,18 @@
     <string name="button">View Comment</string>
     <string name="instructions1">Share the comment in reddit</string>
     <string name="instructions2">app using \'Curious\'</string>
+
+
+    <string name="note">\nNOTE:\nDue to Pushshift\'s nature as an archive tool, information displayed here may not accurately reflect what is currently displayed on reddit.\n"</string>
+    <string name="author">Author: </string>
+    <string name="score">Score: </string>
+    <string name="subreddit">Subreddit: </string>
+    <string name="submitted">Submitted (UTC): </string>
+    <string name="archived">Archived (UTC): </string>
+    <string name="authorID">Author ID: </string>
+    <string name="commentID">Comment ID: </string>
+    <string name="parentID">Parent ID: </string>
+    <string name="linkID">Link ID: </string>
+    <string name="subredditID">Subreddit ID: </string>
+    <string name="click"><a href="https://www.reddit.com/bcxguf">Click here for more info</a></string>
 </resources>

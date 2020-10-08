@@ -12,7 +12,7 @@ public class CommentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.comment);
+        setContentView(R.layout.alert_comment);
         TextView author=findViewById(R.id.authorTV);
         author.setText(dummy);
         TextView body=findViewById(R.id.bodyTV);
