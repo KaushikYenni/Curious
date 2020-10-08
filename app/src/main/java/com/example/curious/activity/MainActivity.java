@@ -1,8 +1,10 @@
-package com.example.curious;
+package com.example.curious.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.curious.R;
 
 public class MainActivity extends AppCompatActivity {
 
