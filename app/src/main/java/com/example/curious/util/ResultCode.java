@@ -1,0 +1,20 @@
+package com.example.curious.util;
+
+public enum ResultCode {
+    SUBMISSION,
+    VALID_COMMENT,
+    INVALID_COMMENT,
+    NOT_REDDIT_LINK,
+    NOT_URL,
+    FAILED,
+    NO_INTERNET,
+    NO_DATA_FOUND,
+    PUSHSHIFT_404,
+    PUSHSHIFT_500,
+    PUSHSHIFT_502,
+    PUSHSHIFT_503,
+    PUSHSHIFT_504,
+    PUSHSHIFT_OTHER,
+    UNKNOWN_ERROR,
+    TIMEOUT
+}
