@@ -295,8 +295,8 @@ public class BuildAlert {
         String commentID = "t1_" + commentData.getId();
         String source = "Data source: https://api.pushshift.io/reddit/search/comment/?ids=" + commentData.getId();
 
-        TextView noteTV = dialogView.findViewById(R.id.md_note_tv);
-        noteTV.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView clickTV = dialogView.findViewById(R.id.md_click_tv);
+        clickTV.setMovementMethod(LinkMovementMethod.getInstance());
 
         TextView authorTV = dialogView.findViewById(R.id.md_author_tv);
         authorTV.setText(author);
