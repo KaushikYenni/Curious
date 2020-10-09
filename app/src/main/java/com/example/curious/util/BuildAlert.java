@@ -256,7 +256,7 @@ public class BuildAlert {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setCustomTitle(dialogToolbar)
-                .setMessage(R.string.view_on_removeddit)
+                .setMessage("View the post on Removeddit")
                 .setPositiveButton("Cancel",(dialog, i) -> {
                     dialog.dismiss();
                     activity.finish();
