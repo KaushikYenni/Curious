@@ -31,7 +31,7 @@ public class CheckURL {
                     Log.i(TAG, "Comment ID: " + id);
                     setResultCode(ResultCode.VALID_COMMENT);
                 }
-                else if (pathSegments.get(0).equals("comments")) {
+                else if (pathSegments.size()>0 && pathSegments.get(0).equals("comments")) {
                     if (pathSegments.size() == 4) { // reddit.com/comments/{submission id}/{submission title}/{alert_comment id}/
                         id = pathSegments.get(3);
                         Log.i(TAG, "Comment ID: " + id);

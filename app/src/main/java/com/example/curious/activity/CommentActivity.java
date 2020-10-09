@@ -19,7 +19,7 @@ import com.example.curious.util.CheckURL;
 import com.example.curious.util.ResultCode;
 
 public class CommentActivity extends AppCompatActivity implements FetchDataCallback {
-    private static final String TAG = "RemovedActivity";
+    private static final String TAG = "CommentActivity";
 
     private CommentViewModel viewModel;
     private ProgressDialog progressDialog;

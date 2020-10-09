@@ -133,7 +133,6 @@ public class BuildAlert {
         }
 
         AlertDialog alert = builder.create();
-        alert.setCanceledOnTouchOutside(false);
         return alert;
     }
 
@@ -258,6 +257,10 @@ public class BuildAlert {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setCustomTitle(dialogToolbar)
                 .setMessage(R.string.view_on_removeddit)
+                .setPositiveButton("Cancel",(dialog, i) -> {
+                    dialog.dismiss();
+                    activity.finish();
+                })
                 .setNeutralButton("Removeddit", (dialog, i) -> {
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(finalRemoveddit));
                     activity.startActivity(browserIntent);
