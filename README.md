@@ -8,7 +8,7 @@ An android app for viewing removed and deleted comments on reddit.
 <table style="width:100%">
     <tr>
         <th>1. Share the comment</th>
-        <th>2. Tap on **Curious** </th> 
+        <th>2. Tap on <b>Curious</b> </th> 
         <th>3. Comment gets displayed</th>
     </tr>
     <tr>
